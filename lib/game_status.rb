@@ -32,6 +32,7 @@ def won?(board)
   end
   false
 end
+
 def full?(board)
 check = true
 board.each do |spot|
@@ -41,3 +42,6 @@ board.each do |spot|
   end
   check
 end
+
+def draw?(board)
+  if (full?(board) && !(won?(board)))
