@@ -61,9 +61,9 @@ end
 
 def winner(board)
   win_row = won?(board)
-  if board[win_row].include?("X")
+  if board[win_row[0]].include?("X")
     return "X"
-  elsif board[win_row].include?("O")
+  elsif board[win_row[0]].include?("O")
     return "O"
   end
 end
