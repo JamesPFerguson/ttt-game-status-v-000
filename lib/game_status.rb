@@ -33,10 +33,9 @@ def won?(board)
   false
 end
 def full?(board)
-  if (board.include?("" || " " || nil))
+  if (board.each == "X" || board.each == "O")
+    true
+  else
     false
-  else if !(board.include?("" || " " || nil))
-   true
   end
-end
-end
+end  
