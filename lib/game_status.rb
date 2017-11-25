@@ -33,5 +33,9 @@ def won?(board)
   false
 end
 def full?(board)
-  board.each.!empty?
+  if board.include?("" || " " || nil)
+    false
+  else
+    true
+  end
 end
