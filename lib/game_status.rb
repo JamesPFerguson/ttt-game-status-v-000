@@ -33,8 +33,8 @@ def won?(board)
   false
 end
 def full?(board)
+check = true
 board.each do |spot|
-  check = true
   if !(spot == "X" || spot == "O")
     check = false
     end
