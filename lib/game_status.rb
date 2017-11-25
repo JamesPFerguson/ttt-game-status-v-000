@@ -59,7 +59,7 @@ def over?(board)
   end
 end
 
-def winner?(board)
+def winner(board)
   win_row = won?(board)
   if win_row.include?("X")
     return "X"
@@ -67,4 +67,3 @@ def winner?(board)
     return "O"
   end
 end
-  
