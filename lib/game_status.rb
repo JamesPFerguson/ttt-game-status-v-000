@@ -58,3 +58,13 @@ def over?(board)
     false
   end
 end
+
+def winner?(board)
+  win_row = won?(board)
+  if win_row.include?("X")
+    return "X"
+  else
+    return "O"
+  end
+end
+  
