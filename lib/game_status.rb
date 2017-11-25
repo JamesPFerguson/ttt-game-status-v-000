@@ -33,9 +33,11 @@ def won?(board)
   false
 end
 def full?(board)
-  if !(board.include?("" || " " || nil)
-        true
-  else
+board.each do |spot|
+  if (spot == "" || " " || nil)
     false
+  else
+    true
+    end
   end
 end
