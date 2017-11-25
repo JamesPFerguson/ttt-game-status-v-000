@@ -34,10 +34,10 @@ def won?(board)
 end
 def full?(board)
 board.each do |spot|
+  check = true
   if (spot == "" || " " || nil)
-    false
-  else
-    true
+    check = false
     end
   end
+  check
 end
