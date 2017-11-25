@@ -35,7 +35,7 @@ end
 def full?(board)
 board.each do |spot|
   check = true
-  if (spot == "" || " " || nil)
+  if !(spot == "X" || spot == "O")
     check = false
     end
   end
